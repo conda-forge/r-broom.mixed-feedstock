@@ -1,4 +1,4 @@
-{% set version = '0.2.3' %}
+{% set version = "0.2.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/broom.mixed_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/broom.mixed/broom.mixed_{{ version }}.tar.gz
-  sha256: 798526a69eafcd014af943ca63b01e551f9ffa534979c474e1b9b0bda1e44538
+  sha256: 4c6c3fdd89b5f473c72f11fed829955ca87d90e0546ae74f5c3d8c46e809c89c
 
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1000
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
