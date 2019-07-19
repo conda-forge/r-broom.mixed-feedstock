@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About r-broom.mixed
 ===================
 
@@ -18,8 +14,15 @@ Summary: Convert fitted objects from various R mixed-model packages into tidy da
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-broom.mixed-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-broom.mixed-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4166&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-broom.mixed-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
