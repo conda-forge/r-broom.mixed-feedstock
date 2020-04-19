@@ -1,4 +1,4 @@
-{% set version = '0.2.4' %}
+{% set version = "0.2.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/broom.mixed_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/broom.mixed/broom.mixed_{{ version }}.tar.gz
-  sha256: 4c6c3fdd89b5f473c72f11fed829955ca87d90e0546ae74f5c3d8c46e809c89c
+  sha256: 3ec5a43b5451d422c273bf3769fadc618648b15028a9baa0b3ed1a5c90c43e88
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -58,14 +58,11 @@ test:
 about:
   home: http://github.com/bbolker/broom.mixed
   license: GPL-3
-  summary: 'Convert fitted objects from various R mixed-model packages into tidy data frames
-    along the lines of the ''broom'' package. The package provides three S3 generics
-    for each model: tidy(), which summarizes a model''s statistical findings such as
-    coefficients of a regression; augment(), which adds columns to the original data
-    such as predictions, residuals and cluster assignments; and glance(), which provides
-    a one-row summary of model-level statistics.'
+  summary: "Convert fitted objects from various R mixed-model packages into tidy data frames along the lines of the 'broom' package. The package provides three S3\
+    \ generics for each model: tidy(), which summarizes a model's statistical findings such as coefficients of a regression; augment(), which adds columns to the\
+    \ original data such as predictions, residuals and cluster assignments; and glance(), which provides a one-row summary of model-level statistics."
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
