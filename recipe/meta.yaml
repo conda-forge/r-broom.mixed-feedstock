@@ -28,6 +28,7 @@ requirements:
     - r-tmb
     - r-broom
     - r-coda
+    - r-cubelyr
     - r-dplyr
     - r-nlme
     - r-plyr
@@ -41,6 +42,7 @@ requirements:
     - r-tmb
     - r-broom
     - r-coda
+    - r-cubelyr
     - r-dplyr
     - r-nlme
     - r-plyr
