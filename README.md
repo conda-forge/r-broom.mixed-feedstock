@@ -1,11 +1,11 @@
-About r-broom.mixed
-===================
+About r-broom.mixed-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-broom.mixed-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/bbolker/broom.mixed
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-broom.mixed-feedstock/blob/main/LICENSE.txt)
 
 Summary: Convert fitted objects from various R mixed-model packages into tidy data frames along the lines of the 'broom' package. The package provides three S3 generics for each model: tidy(), which summarizes a model's statistical findings such as coefficients of a regression; augment(), which adds columns to the original data such as predictions, residuals and cluster assignments; and glance(), which provides a one-row summary of model-level statistics.
 
