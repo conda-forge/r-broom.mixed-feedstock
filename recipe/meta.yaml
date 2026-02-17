@@ -1,4 +1,4 @@
-{% set version = "0.2.9.6" %}
+{% set version = "0.2.9.7" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/broom.mixed_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/broom.mixed/broom.mixed_{{ version }}.tar.gz
-  sha256: f06bfd7ddec2db64ef53cfb02bcb2c0dc90ec3c27e41236c2930820a79e3988c
+  sha256: 21b8fa2352c3dd0ce46345a0cd1b5f9f9bbd74dd3e110c2c1a4a04926eba9641
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
